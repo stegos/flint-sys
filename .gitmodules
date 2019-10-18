@@ -1,0 +1,3 @@
+[submodule "flint2"]
+	path = flint2
+	url = https://github.com/stegos/flint2.git

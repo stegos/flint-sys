@@ -1,0 +1,21 @@
+[package]
+name = "flint-sys"
+version = "0.1.0"
+authors = ["Stegos AG <info@stegos.com>"]
+description = "Rust build script for FLINT"
+repository = "https://github.com/stegos/flint-sys"
+readme = "README.md"
+keywords = ["cryptography", "flint"]
+categories = ["external-ffi-bindings", "cryptography", "science"]
+license = "MIT"
+build = "build.rs"
+links = "flint"
+edition = "2018"
+
+[dependencies]
+libc = "0.2"
+gmp-mpfr-sys = { version = "1.1", git = "https://github.com/stegos/gmp-mpfr-sys.git", branch = "stegos" }
+
+[build-dependencies]
+fs_extra = "1.1"
+cc = "1.0"
